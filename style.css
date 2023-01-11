@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+#gamecontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 20vh);
+  grid-template-rows: repeat(3, 20vh);
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+ background-image: linear-gradient(rgb(172, 3, 172),rgb(119, 0, 255));
+}
+
+.col {
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#alreadyPlayed {
+  pointer-events: none;
+}
+#gameover {
+  display: none;
+  color: white;
+}
+#newgame {
+  display: none;
+  background-color: white;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  color: rgb(211, 3, 211);
+  font-size: 15px;
+  font-weight: bold;
+}
+#gameovercontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 570px) {
+  #gamecontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 15vh);
+    grid-template-rows: repeat(3, 15vh);
+  }
+}
